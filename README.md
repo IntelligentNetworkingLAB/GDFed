@@ -1,16 +1,17 @@
-# GDFed
-GDFed
+# GDFed: Dynamic Federated Learning for Heterogenous Device Using Graph Neural Network
 
-연합 학습은 분산 컴퓨팅 리소스를 사용하여 모델을 학습하는 것을 가능하게 했다. 
-가장 많이 사용되는 Fedavg 방식은 구조가 단순하고 성능이 좋다. 
-그러나 Fedavg는 각 사용자 기기의 성능을 고려하지 않는 단점이 있다. 
-이 문제를 해결하기 위해 각 사용자 장치의 성능과 실시간 상태를 이해하고 학습을 진행하는 연합 학습 구조인 GFed를 제안한다. 
-GFed는 각 장치의 현재 기능을 고려하여 사전 훈련된 GNN 모델을 사용하여 장치를 클러스터링하고 연합 학습에 참여하는 아키텍처이다. 
-실험에서 GDFed 방식은 Fedavg방법과 비교했을 때 성능은 유지하면서 지연시간을 43.3%까지 감축시킬 수 있었다.
+## Overview
+Federated learning has made it possible to learn models using distributed computing resources. The most commonly used, Fedavg method has a simple structure and shows good performance. However, Fedavg has the disadvantage of not considering the performance of each user device in real-time. To solve this problem, we propose GDFed. It is a federated learning structure that understands the performance and realtime status of each user device during proceeds learning. GNN learns from the graph-type dataset and can perform tasks such as node clustering or node classification through the feature of each node (in this case, the device). GDFed is an architecture that clusters devices using pre-trained GNN models and proceeds with federated learning, taking into account the current capabilities of each device. In the experiment, we show the GDFed method outperforms the Fedavg method by 43.3% in reducing the delay time.
 
+![image info](./image/GDFedFig.png)
+
+## Version
+- python 3.8
+- Pytorch 2.0.0
 
 ## Acknowledgement
-이 성과는 2023년도 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원의 지원(No.2019-0-01287-005, 분산 엣지를 위한 진화형 딥러닝 모델생성 플랫폼)과 2023년도 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원의 지원을 받아 수행됨(No.RS-2022-00155911, 인공지능융합혁신인재양성(경희대학교))
+This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2020R1A4A1018607) and in part by Institute of Information communications Technology Planning Evaluation (IITP) grant funded by the Korea government(MSIT) (No.RS-2022-00155911, Artificial Intelligence Convergence Innovation Human Resources Development (Kyung Hee University))*Dr. CS Hong is the corresponding author.
+
 
 ## License
 Copyright (c) 2023 Networking Intelligence
