@@ -3,7 +3,7 @@
 ## Overview
 Federated learning has made it possible to learn models using distributed computing resources. The most commonly used, Fedavg method has a simple structure and shows good performance. However, Fedavg has the disadvantage of not considering the performance of each user device in real-time. To solve this problem, we propose GDFed. It is a federated learning structure that understands the performance and realtime status of each user device during proceeds learning. GNN learns from the graph-type dataset and can perform tasks such as node clustering or node classification through the feature of each node (in this case, the device). GDFed is an architecture that clusters devices using pre-trained GNN models and proceeds with federated learning, taking into account the current capabilities of each device. In the experiment, we show the GDFed method outperforms the Fedavg method by 43.3% in reducing the delay time.
 
-![image info](./image/GDFedFig.png)
+![image info](./image/figure1.png)
 
 ## Version
 - python 3.8
