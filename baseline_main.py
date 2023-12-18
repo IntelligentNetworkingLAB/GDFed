@@ -67,7 +67,6 @@ if __name__ == '__main__':
 
         for batch_idx, (images, labels) in enumerate(trainloader):
             images, labels = images.to(device), labels.to(device)
-
             optimizer.zero_grad()
             outputs = global_model(images)
             loss = criterion(outputs, labels)
